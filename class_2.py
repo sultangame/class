@@ -29,9 +29,10 @@ class Dog(object):
         return f"он {self.colour} цвета" \
                f" он из породы  {self.breed} " \
                f" ему  {self.age} года"
-
     def is_play(self):
         return f"{self.name} любит гулять и играть"
+
+
 if __name__ == "__main__":
     My_dog = Dog("Шарик", 2, "черного", "авчарок")
     print(My_dog.sposobnosty())
