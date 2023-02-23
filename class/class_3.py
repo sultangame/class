@@ -38,23 +38,24 @@ lang = "В Англиский алфавите"
 print(letters, lang, letters_num())
 
 
-
-
 class EngAlphabet(ALphabet):
-    def __init__(self):
+    def __init__(self, primer):
+        self.primer = primer
         super().__init__(lang, letters)
-    def proverka(self):
-        self.proverka()
-        if a == letters:
-            return "True"
-        if a != letters:
-            return "False"
-        if b == letters:
-            return "True"
-        if b != letters:
-            return "False"
 
-a = input("Введите букву:")
-b = input("Введите букву:")
-print(proverka())
 
+def proverka():
+    if a == letters:
+        print("True")
+    if a != letters:
+        print("False")
+    if b == letters:
+        print("True")
+    if b != letters:
+        print("False")
+
+
+primer = "for example: go out"
+a = input("Введите букву a:")
+b = input("Введите букву b:")
+print(primer,proverka() )
